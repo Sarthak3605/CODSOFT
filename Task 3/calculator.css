@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --wid: 100%;
+    --dis: 0.8rem;
+}
+
+.Wrapper {
+    overflow: 0;
+    height: 100vh;
+    width: var(--wid);
+}
+
+.container {
+    width: var(--wid);
+    height: 100vh;
+    background: linear-gradient( 370deg, #a1d9ffad, transparent);
+}
+
+.calci-box {
+    height: 90%;
+    box-shadow: 2px 2px 7px 0px;
+    background: #5f4f4fe0;
+    grid-gap: var(--dis);
+    padding: var(--dis);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.calci-input {
+    margin-bottom: 0.5rem;
+    background-color: black;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    height: var(--wid);
+}
+
+#Input {
+    text-align: right;
+    padding: var(--dis);
+    font-size: 1.2rem;
+    color: white;
+    width: var(--wid);
+    background-color: black;
+    height: var(--wid);
+}
+
+.button-zero {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 1.7rem 0.5rem;
+    border-top-right-radius: 15%;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 2px 2px 5px 0px;
+}
+
+.button-zero:hover {
+    transition: all 0.3s;
+    transform: scale(1.1);
+    background-color: rgba(87, 43, 43, 0.672);
+}
+
+.button-equal {
+    border-radius: 3%;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 1.8rem 1rem;
+    border: none;
+    box-shadow: 2px 2px 5px 0px;
+    grid-column: span 2;
+}
+
+.button-equal:hover {
+    transition: all 0.3s;
+    transform: scale(1.1);
+    background-color: rgba(87, 43, 43, 0.672);
+}
+
+#btn {
+    border-radius: 40%;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 1.8rem 1rem;
+    border: none;
+    box-shadow: 2px 2px 5px 0px black;
+}
+
+#btn:hover {
+    transition: all 0.3s;
+    transform: scale(1.1);
+    background-color: rgba(136, 69, 69, 0.672);
+}
+
+.orange {
+    background-color: rgba(255, 194, 82, 0.989);
+}
+
+.grey {
+    background-color: rgb(149, 149, 149);
+}
+
+.button-sum {
+    grid-row: span 2;
+    border-radius: 3%;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 1.8rem 1rem;
+    border: none;
+    box-shadow: 2px 2px 5px 0px;
+}
+
+.button-sum:hover {
+    transition: all 0.3s;
+    transform: scale(1.1);
+    background-color: rgba(87, 43, 43, 0.672);
+}
+
+.color-sky {
+    color: rgb(60, 197, 251);
+    box-shadow: 2px 2px 5px 0px black;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
